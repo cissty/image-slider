@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Mukta', sans-serif;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+img{
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+figure{
+  position: relative;
+}
+figcaption{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  border-top: 2px solid gold;
+  padding: 3px;
+  width: 800px;
+}
+#image{
+  width: 800px;
+  height: 80vh;
+}
+.direction-arrow{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 20px;
+}
+.container{
+    height: 80vh;
+    width: 800px;
+    display: inline-block;
+}
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 30px;
+    padding-top: 5px;
+}
+.svg-svg{
+  cursor: pointer;
+}
+
+.active{
+  fill: #000;
+}
+
+
+.duration-menu {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.duration-menu > label{
+  font-size: 18px
+}
+
+.duration-menu label {
+  margin-right: 10px;
+}
+
+.duration-menu select {
+  padding: 2px;
+  font-size: 16px;
+}
+
+ 
+@media all and (max-width: 480px) { 
+  body{
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .circles{
+    width: 350px;
+  }
+
+  .container{
+    width: 350px;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+}
+    #image{
+      width: 350px;
+      height: 76vh;
+    }
+    figcaption{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+      border-top: 2px solid gold;
+      width: 350px;
+    }
+    .direction-arrow{
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+  }
+  .direction-arrow.left{
+    bottom: 0;
+    left: 20%;
+  }
+  .direction-arrow.right{
+    bottom: 0;
+    right: 20%;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 480px){
+  body{
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .circles{
+    width: 360px;
+  }
+
+  .container{
+    width: 360px;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+}
+    #image{
+      width: 360px;
+      height: 76vh;
+    }
+    figcaption{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+      border-top: 2px solid gold;
+      width: 360px;
+    }
+    .direction-arrow{
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+  }
+  .direction-arrow.left{
+    bottom: 0;
+    left: 20%;
+  }
+  .direction-arrow.right{
+    bottom: 0;
+    right: 20%;
+  }
+ 
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  body{
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .circles{
+    width: 540px;
+  }
+
+  .container{
+    width: 540px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+    #image{
+      width: 540px;
+      height: 80vh;
+    }
+    figcaption{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+      border-top: 2px solid gold;
+      width: 540px;
+    }
+    
+    .direction-arrow{
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+  }
+  .direction-arrow.left{
+    bottom: 0;
+    left: 20%;
+  }
+  .direction-arrow.right{
+    bottom: 0;
+    right: 20%;
+  }
+}
